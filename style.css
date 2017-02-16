@@ -1,0 +1,15 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+    color: white;
+    background-color: black;
+}
+
+p#clock
+{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 5em;
+    width: 100%;
+    font-family: 'Noto Sans Japanese', serif;
+}

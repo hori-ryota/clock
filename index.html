@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>clock</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+<p id="clock"></p>
+<script type="text/javascript">
+(function(d){
+  var clock = d.getElementById('clock');
+
+  setInterval(function(){
+    var date = new Date()
+    var out =
+      date.getFullYear() + '/' +
+      ('0' + (date.getMonth() + 1)).slice(-2) + '/' +
+      ('0' + date.getDate()).slice(-2) + ' ' +
+      ('0' + date.getHours()).slice(-2) + ':' +
+      ('0' + date.getMinutes()).slice(-2) + ':' +
+      ('0' + date.getSeconds()).slice(-2) + '.' +
+      ('00' + date.getMilliseconds()).slice(-3);
+
+    clock.textContent = out;
+  }, 0);
+}(document));
+</script>
+</body>
+</html>
