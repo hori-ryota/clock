@@ -1,13 +1,14 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body {
-    color: white;
-    background-color: black;
+    background-color: rgba(24, 24, 24, .7);
+    color: #fff;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
 }
 
 p#clock
 {
-    margin-top: 200px;
     text-align: center;
     font-size: 5em;
     width: 100%;
